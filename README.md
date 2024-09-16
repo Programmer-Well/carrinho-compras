@@ -34,5 +34,5 @@ Este é um projeto simples de um carrinho de compras implementado com HTML, CSS 
 
 ## Como Usar
 
-1. 
+1. https://carrinho-compras-js-five.vercel.app/ 
 
