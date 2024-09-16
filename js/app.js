@@ -3,16 +3,13 @@ limpar();
 
 function adicionar() {
 
-    //recuperar valores nome do produto, quantidade e valor
     let produto = document.getElementById('produto').value;
     let nomeProduto = produto.split('-')[0];
     let valorUnitario = produto.split('R$')[1];
     let quantidade = document.getElementById('quantidade').value;
   
-    //calcular o preço, o nosso  subtotal
     let preco = quantidade * valorUnitario;
 
-    //adicionar no carrinho
     let carrinho = document.getElementById('lista-produtos');
 
     if (quantidade > 0){
@@ -22,10 +19,7 @@ function adicionar() {
     } else{
         alert('Coloque a quantidade antes de adicionar!')
     }
-   
-
-    //atualizar o valor total
-
+    
     totalGeral = totalGeral + preco;
     let campoTotal = document.getElementById('valor-total');
     campoTotal.textContent = `R$ ${totalGeral}`;
